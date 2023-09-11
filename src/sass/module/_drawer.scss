@@ -1,0 +1,28 @@
+@use "global" as *;
+
+
+.drawer__container {
+  display: flex;
+  margin-top: rem(90);
+}
+
+.drawer__link-items {
+  margin-top: rem(16);
+  // margin-top: rem(20);
+  // margin-bottom: rem(40);
+  margin-bottom: rem(30);
+  display: flex;
+}
+
+.drawer__link-items + .drawer__link-items {
+  margin-left: rem(20);
+}
+
+.drawer__link-item {
+  aspect-ratio: 1/1;
+  width: rem(24);
+}
+
+.drawer__link-item + .drawer__link-item {
+  margin-left: rem(16);
+}

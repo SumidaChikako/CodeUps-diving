@@ -1,0 +1,44 @@
+@use "global" as *;
+
+.voice__inner {
+  position: relative;
+  padding-top: rem(10);
+}
+
+.voice__inner::before {
+  @include mq("md") {
+    content: "";
+    position: absolute;
+    width: rem(301);
+    height: rem(138);
+    top: rem(-110);
+    left: calc(50% - min(48vw, rem(620)));
+    background-image: url(../images/common/voice-fish-deco.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.voice__inner::after {
+  @include mq("md") {
+    content: "";
+    position: absolute;
+    width: rem(71);
+    height: rem(162);
+    bottom: rem(-70);
+    right: calc(50% - min(48.5vw, rem(539.2)));
+    background-image: url(../images/common/voice-ibaratatsu-deco.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+.voice__button {
+  text-align: center;
+  margin-top: rem(40);
+  @include mq("md") {
+    margin-top: rem(80);
+  }
+}

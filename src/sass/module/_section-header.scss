@@ -1,0 +1,87 @@
+@use "global" as *;
+
+
+// 見出し(セクション)
+.section-header {
+  text-align: center;
+}
+
+.section-header__engtitle {
+  font-size: rem(32);
+  font-family: $second-font-family;
+  font-weight: $normal;
+  text-transform: capitalize;
+  line-height: 1;
+  @include mq("md") {
+    font-size: rem(40);
+  }
+}
+
+.section-header__engtitle:first-letter {
+  color: $green;
+}
+
+.section-header__engtitle span {
+  text-transform: lowercase;
+}
+
+.section-header__jatitle {
+  font-size: rem(12);
+  font-family: $base-font-family;
+  font-weight: $normal;
+  color: $green;
+  line-height: calc(18/12);
+  margin-top: rem(8);
+}
+
+.section-header__engtitle--contact {
+  @include mq("md") {
+    color: $white;
+  }
+}
+
+.section-header__engtitle--contactLink {
+  font-size: rem(80);
+  line-height: 1;
+  @include mq("md") {
+    font-size: rem(80);
+    margin-top: rem(-3);
+  }
+}
+
+.section-header__jatitle--contactLink {
+  line-height: 1.5;
+  margin-top: rem(-8);
+}
+
+.section-header__engtitle--secondary:first-letter,
+.section-header__jatitle--secondary {
+  @include mq("md") {
+    color: $green2;
+  }
+}
+
+
+// ヘッダーのタイトル設定
+.section-header__engtitle.section-header__engtitle--small {
+  font-size: rem(18);
+  color: $white;
+  line-height: 1;
+}
+
+.section-header__engtitle--small:first-letter {
+  color: $white;
+}
+
+.section-header__engtitle--small span {
+  text-transform: lowercase;
+}
+
+.section-header__engtitle--small-reverse {
+  text-transform: uppercase;
+}
+
+.section-header__jatitle.section-header__jatitle--small {
+  font-size: rem(10);
+  color: $white;
+}

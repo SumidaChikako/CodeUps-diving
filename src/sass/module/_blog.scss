@@ -1,0 +1,69 @@
+@use "global" as *;
+
+.blog {
+  position: relative;
+}
+
+.blog__bg {
+  @include mq("md") {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 61%;
+  }
+}
+
+.blog__bg img {
+  @include mq("md") {
+    aspect-ratio: 1440/500;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.blog__inner {
+  position: relative;
+}
+
+.blog__inner.inner {
+  padding-left: rem(21);
+  padding-right: rem(21);
+  @include mq("md") {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.blog__inner::before {
+  @include mq("md") {
+    content: "";
+    position: absolute;
+    width: rem(437);
+    height: rem(201);
+    top: rem(-77);
+    left: calc(50% - min(48.5vw, rem(619.2)));
+    background-image: url(../images/common/blog-fish-deco.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+
+.blog__items {
+  // margin-top: rem(24);
+  margin-top: rem(26.5);
+  @include mq("md") {
+    margin-top: rem(80);
+  }
+}
+
+.blog__button {
+  text-align: center;
+  margin-top: rem(40);
+  @include mq("md") {
+    margin-top: rem(80);
+  }
+}

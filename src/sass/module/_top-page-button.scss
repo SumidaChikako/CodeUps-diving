@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.top-page-button {
+  position: fixed;
+  bottom: rem(16);
+  right: rem(15);
+  width: rem(48);
+  height: rem(48);
+  border-radius: 50%;
+  z-index: 500;
+  background-color: $white;
+  @include mq("md") {
+    right: rem(20);
+    width: rem(80);
+    height: rem(80);
+  }
+}

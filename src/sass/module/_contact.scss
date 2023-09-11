@@ -1,0 +1,169 @@
+@use "global" as *;
+
+
+.contact__inner {
+  max-width: rem(650);
+  width: 100%;
+  @include mq("md") {
+  }
+}
+
+.contact__container {
+  background: $white;
+  @include mq("md") {
+    padding: rem(80) rem(50);
+    box-shadow: rem(4) rem(4) rem(10) rgba(0, 0, 0, 0.25);
+    display: flex;
+    position: relative;
+  }
+}
+
+.contact__container::after {
+  @include mq("md") {
+    position: absolute;
+    top: rem(-40);
+    right: calc(50% - min(49vw, 41.9rem));
+    content: "";
+    background-image: url(../images/common/contact-fish-deco.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: rem(301);
+    width: 100%;
+    height: rem(138);
+  }
+}
+
+.contact__content {
+  padding: 0 rem(25);
+  @include mq("md") {
+    padding: 0;
+    padding-right: rem(82);
+    border-right: 1px solid $green;
+    width: 53.93%;
+  }
+}
+
+.contact__logo {
+  border-bottom: 1px solid $green;
+  text-align: center;
+  @include mq("md") {
+    padding-bottom: rem(3);
+  }
+}
+
+.contact__img {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: rem(174);
+  @include mq("md") {
+    max-width: rem(200);
+  }
+}
+
+.contact__img::after {
+    position: absolute;
+    top: rem(-25);
+    right: rem(-85);
+    content: "";
+    background-image: url(../images/common/contact-fish-sp-deco.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: rem(109);
+    width: 100%;
+    height: rem(50);
+  @include mq("md") {
+    content: initial;
+  }
+}
+
+.contact__info {
+  margin-top: rem(16);
+  text-align: center;
+  @include mq("md") {
+    margin-top: rem(24);
+    display: flex;
+    gap: 4.78%;
+  }
+}
+
+.contact__address {
+  color: $green3;
+  @include mq("md") {
+    width: 33.18%;
+    text-align: left;
+  }
+}
+
+.contact__address li {
+  margin-top: rem(4);
+  line-height: 1.5;
+}
+
+.contact__address li:first-child {
+  @include mq("md") {
+    margin-top: 0;
+  }
+}
+
+.contact__map {
+  margin-top: rem(16);
+  @include mq("md") {
+    margin-top: rem(24);
+    margin-top: 0;
+    width: 62.04%;
+  }
+}
+
+.contact__map {
+  position: relative;
+  width: 100%;
+}
+
+.contact__map::before {
+  content: "";
+  display: block;
+  padding-top: 54.23%;
+  @include mq("md") {
+    padding-top: 53.93%;
+  }
+}
+
+.contact__map iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact__link {
+  margin-top: rem(48);
+  @include mq("md") {
+    margin-top: rem(30);
+    padding-left: rem(20);
+    width: 47.2%;
+  }
+}
+
+.contact__text {
+  color: $green;
+  font-size: rem(14);
+  margin-top: rem(7);
+  text-align: center;
+  @include mq("md") {
+    // margin-top: 0;
+  }
+}
+
+.contact__button {
+  text-align: center;
+  margin-top: rem(40);
+  @include mq("md") {
+    margin-top: rem(40);
+  }
+}

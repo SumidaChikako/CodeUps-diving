@@ -1,0 +1,112 @@
+@use "global" as *;
+
+.footer-nav {
+  width: 100%;
+  display: flex;
+  background-color: $green;
+}
+
+.footer-nav__inner {
+  display: flex;
+  // padding: rem(96) rem(15) rem(80);
+  @include mq("md") {
+    // margin-top: rem(30);
+  }
+}
+
+.footer-nav__left {
+  width: 51%;
+  @include mq("md") {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    height: rem(250);
+    flex-wrap: wrap;
+    row-gap: rem(16);
+    // column-gap: rem(29);
+    column-gap: rem(120);
+    margin-top: rem(13);
+  }
+}
+
+.footer-nav__right {
+  margin-left: rem(11);
+  width: 47%;
+  @include mq("md") {
+    // margin-left: rem(28);
+    margin-left: rem(130);
+    width: 48.7%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    height: rem(250);
+    flex-wrap: wrap;
+    row-gap: rem(10);
+    column-gap: rem(45);
+    margin-top: rem(13);
+    // row-gap: rem(16);
+    // column-gap: rem(29);
+  }
+}
+
+.footer-nav__left-items,
+.footer-nav__right-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-nav__left-item a,
+.footer-nav__right-item a {
+  font-weight: 700;
+}
+
+.footer-nav__list a,
+.footer-nav__left-item a,
+.footer-nav__right-item a {
+  width: 100%;
+  display: block;
+  padding-top: rem(12);
+  padding-bottom: rem(12);
+  padding-left: rem(22);
+  color: $white;
+  line-height: 1.125;
+  transition: opacity 0.3s;
+}
+
+// 調整用モディファイア
+.footer-nav__left-item--wide a {
+    margin-top: rem(16);
+    @include mq("md") {
+      margin-top: 0;
+    }
+}
+
+.footer-nav__right-item--wide a {
+  margin-top: rem(16);
+  @include mq("md") {
+    margin-top: 0;
+  }
+}
+
+.footer-nav__list {
+  font-weight: $regular;
+}
+
+.footer-nav__left-item:first-child a,
+.footer-nav__right-item:first-child a {
+  position: relative;
+}
+
+.footer-nav__left-item:first-child a::before,
+.footer-nav__right-item:first-child a::before {
+  content: "";
+  position: absolute;
+  width: rem(18);
+  height: rem(18);
+  top: rem(8);
+  left: 0;
+  background-image: url(../images/common/starfish-deco.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

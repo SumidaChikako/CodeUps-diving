@@ -1,0 +1,18 @@
+@use "global" as *;
+
+.voice-cards {
+  // margin-top: rem(40);
+  margin-top: rem(44);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: rem(40);
+  @include mq("md") {
+    margin-top: rem(30);
+    grid-template-columns: 1fr 1fr;
+    gap: rem(46);
+  }
+}
+
+.voice-cards__item {
+  width: 100%;
+}

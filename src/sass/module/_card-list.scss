@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.card-list {
+  @include mq("md") {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.card-list__item {
+  @include mq("md") {
+    max-width: calc(33.3333% - rem(40) * 2 / 3);
+    width: 100%;
+  }
+}
+
+.card-list__item + .card-list__item {
+  margin-top: rem(40);
+  @include mq("md") {
+    margin-top: 0;
+    margin-left: rem(40);
+  }
+}

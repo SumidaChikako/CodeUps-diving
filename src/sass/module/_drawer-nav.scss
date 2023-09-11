@@ -1,0 +1,234 @@
+@use "global" as *;
+
+.drawer-nav {
+  width: 100%;
+  display: flex;
+  background-color: $green;
+}
+
+.drawer-nav__inner {
+  display: flex;
+}
+
+.drawer-nav__left {
+  width: 50%;
+}
+
+.drawer-nav__right {
+  margin-left: 0;
+  width: 50%;
+}
+
+.drawer-nav__left-items,
+.drawer-nav__right-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.drawer-nav__left-item a,
+.drawer-nav__right-item a {
+  font-weight: $bold;
+}
+
+.drawer-nav__list a,
+.drawer-nav__left-item a,
+.drawer-nav__right-item a {
+  width: 100%;
+  display: block;
+  padding-top: rem(12);
+  padding-bottom: rem(12);
+  padding-left: rem(22);
+  color: $white;
+  font-weight: $regular;
+  line-height: 1.13;
+  transition: opacity 0.3s;
+}
+
+.drawer-nav__left-item--wide a {
+    margin-top: rem(16);
+}
+
+.drawer-nav__right-item--wide a {
+  margin-top: rem(16);
+}
+
+.drawer-nav__list {
+  font-weight: $regular;
+}
+
+.drawer-nav__left-item:first-child a,
+.drawer-nav__right-item:first-child a {
+  font-weight: $bold;
+  position: relative;
+}
+
+.drawer-nav__left-item:first-child a::before,
+.drawer-nav__right-item:first-child a::before {
+  content: "";
+  position: absolute;
+  top: rem(12);
+  left: 0;
+  width: rem(18);
+  height: rem(18);
+  background-image: url(../images/common/starfish-deco.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////下記削除///////////////////
+// .drawer-nav {
+//   width: 100%;
+//   display: flex;
+//   background-color: $green;
+// }
+
+// .drawer-nav__inner {
+//   display: flex;
+//   // padding: rem(96) rem(15) rem(80);
+// }
+
+
+
+// .drawer-nav__left {
+//   // width: 51%;
+//   // @include mq("md") {
+//     // width: 49%;
+//     // padding-top: rem(20);
+//     // margin-top: rem(-36);
+//     // margin-left: rem(-26);
+//     margin-top: rem(40);
+//     margin-left: rem(-26);
+//     display: flex;
+//     flex-direction: column;
+//     // height: rem(250);
+//     flex-wrap: wrap;
+//     // row-gap: rem(16);
+//     // row-gap: rem(16);
+//     row-gap: rem(16);
+//     // column-gap: rem(29);
+//     // column-gap: rem(34);
+//     // column-gap: rem(62);
+//   // }
+// }
+
+// .drawer-nav__sub-list {
+//   // padding-top: rem(8);
+// }
+
+// .drawer-nav__right {
+//   // margin-left: rem(11);
+//   // margin-left: 0;
+//   // width: 47%;
+//   // @include mq("md") {
+//     // margin-left: rem(28);
+//     margin-top: rem(72);
+//     margin-left: 0;
+//     // width: 48.7%;
+//     // width: 60%;
+//     display: flex;
+//     flex-direction: column;
+//     // height: rem(250);
+//     flex-wrap: wrap;
+//     row-gap: rem(10);
+//     // column-gap: rem(40);
+//     // row-gap: rem(16);
+//     // column-gap: rem(29);
+//   // }
+// }
+
+// .drawer-nav__left-items,
+// .drawer-nav__right-items {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// .drawer-nav__left-item a,
+// .drawer-nav__right-item a {
+//   font-weight: $bold;
+// }
+
+// .drawer-nav__left-item {
+//   font-size: rem(16);
+//   font-weight: $bold;
+//   position: relative;
+//   // padding-top: rem(12);
+//   // padding-bottom: rem(12);
+//   padding-top: rem(8);
+//   padding-bottom: rem(8);
+// }
+
+// .drawer-nav__list a,
+// .drawer-nav__left-item a,
+// .drawer-nav__right-item a {
+//   width: 100%;
+//   display: block;
+//   padding-top: rem(12);
+//   padding-bottom: rem(12);
+//   // padding-top: rem(8);
+//   // padding-bottom: rem(8);
+//   padding-left: rem(22);
+//   color: $white;
+//   // font-weight: 300;
+//   // line-height: 1.25;
+//   transition: opacity 0.3s;
+// }
+
+// .drawer-nav__list a {
+//   font-weight: $regular;
+//   // margin-top: rem(20);
+//   // padding-top: rem(4);
+//   // padding-bottom: rem(4);
+// }
+
+// // .drawer-nav__list:first-child li {
+// //   margin-top: rem(60);
+// // }
+
+// .drawer-nav__left-item:first-child a,
+// .drawer-nav__right-item:first-child a {
+//   font-weight: $bold;
+//   position: relative;
+// }
+
+// .drawer-nav__left-item:first-child a::before,
+// .drawer-nav__right-item:first-child a::before {
+//   content: "";
+//   position: absolute;
+//   width: rem(18);
+//   height: rem(18);
+//   // top: rem(8);
+//   top: rem(14);
+//   // right: auto;
+//   // left: 0;
+//   left: 0;
+//   background-image: url(../images/common/starfish-deco.svg);
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+// }
