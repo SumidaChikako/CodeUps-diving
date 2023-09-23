@@ -54,10 +54,10 @@
 }
 
 .header__items {
+  height: inherit;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: inherit;
 }
 
 .header__item {
@@ -66,48 +66,42 @@
   color: $white;
 }
 
+
 .header__item a {
   height: inherit;
-  position: relative;
+  font-weight: $regular;
+  color: $white;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-left: rem(20);
-  padding-right: rem(20);
+  padding-left: clamp(rem(16), 1vw, rem(20));
+  padding-right: clamp(rem(16), 1vw, rem(20));
 }
 
-.header__item a:hover{
-  color: $white;
+.header__box {
+  position: relative;
+  text-align: center;
 }
 
-.header__item a::after {
+.header__box::after  {
   content: '';
   position: absolute;
-  bottom: rem(16);
-  left: rem(10);
-  width: 60%;
-  height: 1%;
+  bottom: rem(-10);
+  left: 0;
+  width: 100%;
+  height: rem(1);
   background: $white;
   transition: all .5s;
   transform: scale(0, 1);
   transform-origin: center top;
 }
 
-.header__item a:hover {
-  text-decoration: none;
-  position: relative;
-}
-
-.header__item a:hover::after {
-  content: "";
-  position: absolute;
-  bottom: rem(16);
-  left: 0;
-  width: 100%;
-  border-bottom: 1px solid $white;
+.header__item a:hover
+.header__box::after {
   transform: scale(1, 1);
 }
+
 
 // ハンバーガー
 .header__hamburger {

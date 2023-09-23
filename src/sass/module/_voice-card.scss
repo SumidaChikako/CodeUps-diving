@@ -17,6 +17,7 @@
 .voice-card__head {
   display: flex;
   gap: 4.16%;
+  align-items: end;
   @include mq("md") {
     gap: 3.43%;
   }
@@ -66,10 +67,18 @@
   position: relative;
   margin-top: rem(9);
   width: 100%;
-  width: 48%;
+  max-width: 48%;
   @include mq("md") {
     margin-top: 0;
-    width: 38%;
+    max-width: 38%;
+  }
+}
+
+.voice-card__img img {
+  aspect-ratio: 151 / 117;
+  object-fit: cover;
+  @include mq("md") {
+    aspect-ratio: 180 / 140;
   }
 }
 

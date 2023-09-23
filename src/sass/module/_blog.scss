@@ -27,15 +27,6 @@
   position: relative;
 }
 
-.blog__inner.inner {
-  padding-left: rem(21);
-  padding-right: rem(21);
-  @include mq("md") {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
 .blog__inner::before {
   @include mq("md") {
     content: "";

@@ -1,0 +1,7 @@
+@use "global" as *;
+
+.campaign-swiper__container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}

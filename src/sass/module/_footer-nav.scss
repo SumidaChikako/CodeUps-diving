@@ -8,10 +8,6 @@
 
 .footer-nav__inner {
   display: flex;
-  // padding: rem(96) rem(15) rem(80);
-  @include mq("md") {
-    // margin-top: rem(30);
-  }
 }
 
 .footer-nav__left {
@@ -23,7 +19,6 @@
     height: rem(250);
     flex-wrap: wrap;
     row-gap: rem(16);
-    // column-gap: rem(29);
     column-gap: rem(120);
     margin-top: rem(13);
   }
@@ -33,7 +28,6 @@
   margin-left: rem(11);
   width: 47%;
   @include mq("md") {
-    // margin-left: rem(28);
     margin-left: rem(130);
     width: 48.7%;
     width: 60%;
@@ -44,8 +38,6 @@
     row-gap: rem(10);
     column-gap: rem(45);
     margin-top: rem(13);
-    // row-gap: rem(16);
-    // column-gap: rem(29);
   }
 }
 
@@ -58,6 +50,12 @@
 .footer-nav__left-item a,
 .footer-nav__right-item a {
   font-weight: 700;
+}
+
+.footer-nav__left-item a:hover,
+.footer-nav__right-item a:hover,
+.footer-nav__list a:hover {
+  opacity: 0.8;
 }
 
 .footer-nav__list a,

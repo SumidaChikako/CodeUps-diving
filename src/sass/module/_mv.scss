@@ -14,13 +14,13 @@
 }
 
 .mv__slider,
-.swiper-slide picture,
-.swiper-slide img {
+.mv__swiper-slide picture,
+.mv__swiper-slide img {
   height: inherit;
   min-height: inherit;
 }
 
-.swiper-slide img {
+.mv__swiper-slide-img.swiper-slide img {
   aspect-ratio: 375 / 667;
   object-fit: cover;
   @include mq("md") {

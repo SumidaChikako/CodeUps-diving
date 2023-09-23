@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .campaign__inner {
-  position: relative;
+  position: relative; 
 }
 
 .campaign__swiper-button {
@@ -16,12 +16,12 @@
 }
 
 .campaign__contents {
+  overflow: hidden;
   margin-right: calc(50% - 50vw);
-  // margin-top: rem(24);
   margin-top: rem(28);
   @include mq('md'){
-      // margin-top: rem(40);
-      margin-top: rem(83);
+    // margin-top: rem(40);
+    margin-top: rem(83);
   }
 }
 
