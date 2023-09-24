@@ -30,6 +30,12 @@
   font-weight: $bold;
 }
 
+.drawer-nav__left-item a:hover,
+.drawer-nav__right-item a:hover,
+.drawer-nav__sub-list a:hover {
+  opacity: 0.8;
+}
+
 .drawer-nav__list a,
 .drawer-nav__left-item a,
 .drawer-nav__right-item a {
