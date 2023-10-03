@@ -4,8 +4,6 @@
 .contact__inner {
   max-width: rem(650);
   width: 100%;
-  @include mq("md") {
-  }
 }
 
 .contact__container {
@@ -38,7 +36,7 @@
   padding: 0 rem(25);
   @include mq("md") {
     padding: 0;
-    padding-right: rem(82);
+    padding-right: clamp(-1.875rem, -4.34rem + 10.52vw, 5.125rem);
     border-right: 1px solid $green;
     width: 53.93%;
   }

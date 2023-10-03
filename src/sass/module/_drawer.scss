@@ -1,5 +1,8 @@
 @use "global" as *;
 
+.drawer {
+  overflow-y: scroll;
+}
 
 .drawer__container {
   display: flex;
